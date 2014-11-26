@@ -1,0 +1,303 @@
+2014/11/26 16:04:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/jeniffer/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/jeniffer/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/jeniffer/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/jeniffer/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/jeniffer/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/jeniffer/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/jeniffer/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/jeniffer/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/jeniffer/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/jeniffer/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 /Users/jeniffer/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/jeniffer/PhpstormProjects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/post/admin
+HTTP_REFERER=http://localhost/site/login
+---
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "log" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "request" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.web.filters.CFilterChain] Running filter PostController.filteraccessControl()
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "user" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "session" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.ar.CActiveRecord] Post.count()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "db" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_post` `t`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.ar.CActiveRecord] Post.findAll()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_post` `t` LIMIT 10
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:08:42 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "log" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "request" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.web.filters.CFilterChain] Running filter PostController.filteraccessControl()
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "user" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "session" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.ar.CActiveRecord] Post.count()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "db" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_post` `t`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.ar.CActiveRecord] Post.findAll()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_post` `t` LIMIT 10
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:37 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "log" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "request" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.web.filters.CFilterChain] Running filter PostController.filteraccessControl()
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "user" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "session" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Users/jeniffer/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Users/jeniffer/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Users/jeniffer/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/jeniffer/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/jeniffer/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/jeniffer/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/jeniffer/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/jeniffer/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/jeniffer/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/jeniffer/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/admin')
+#9 /Users/jeniffer/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/jeniffer/PhpstormProjects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/post/admin
+HTTP_REFERER=http://localhost/post/index
+---
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "errorHandler" application component
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/layouts/column1.php (2)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/SiteController.php (45)
+2014/11/26 16:10:44 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/SiteController.php (45)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "log" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "request" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.web.filters.CFilterChain] Running filter PostController.filteraccessControl()
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "user" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "session" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.ar.CActiveRecord] Post.count()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "db" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_post`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_post` `t`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.ar.CActiveRecord] Post.findAll()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_post` `t` LIMIT 10
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:47 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/post/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/PostController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "log" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "request" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "urlManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.web.filters.CFilterChain] Running filter CommentController.filteraccessControl()
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "user" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "session" application component
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "widgetFactory" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.ar.CActiveRecord] Comment.count()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "db" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.CDbConnection] Opening DB connection
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `tbl_comment`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_comment`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_comment` `t`
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.ar.CActiveRecord] Comment.findAll()
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_comment` `t` LIMIT 10
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "assetManager" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "clientScript" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:10:56 [trace] [system.CModule] Loading "coreMessages" application component
+in /Users/jeniffer/PhpstormProjects/demo/protected/views/comment/index.php (20)
+in /Users/jeniffer/PhpstormProjects/demo/protected/controllers/CommentController.php (128)
+in /Users/jeniffer/PhpstormProjects/demo/index.php (13)
+2014/11/26 16:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/jeniffer/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/jeniffer/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/jeniffer/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/jeniffer/PhpstormProjects/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/post
+---
